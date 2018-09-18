@@ -5,26 +5,8 @@ const PORT = process.env.PORT || 3000;
 const path = require('path');
 
 const handlebars = require('express-handlebars');
-const hbs = handlebars.create({
-  helpers: {
-    grouped_each: function(every, context, options) {
-        var out = "", subcontext = [], i;
-        if (context && context.length > 0) {
-            for (i = 0; i < context.length; i++) {
-                if (i > 0 && i % every === 0) {
-                    out += options.fn(subcontext);
-                    subcontext = [];
-                }
-                subcontext.push(context[i]);
-            }
-            out += options.fn(subcontext);
-        }
-        return out;
-    }
-  }
-})
 
-app.engine('.hbs', hbs.engine);
+app.engine('.hbs', handlebars({ extname: '.hbs' }));
 app.set("PORT", PORT);
 
 app.use(express.static(path.join(__dirname, 'assets')));
