@@ -9,62 +9,21 @@
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-}
-
-.grid-container.grid-container--no-spacing {
-  padding: 0;
-}
-
-body.index .search-ribbon {
-  width: 200px;
-  height: 600px;
-  background-color: blue;
-
-  position:absolute; /*it can be fixed too*/
-  left:0; right:0;
-  top:0; bottom:0;
-  margin:auto;
-
-  /*this to solve "the content will not be cut when the window is smaller than the content": */
-  max-width:100%;
-  max-height:100%;
-  overflow:auto;
-  text-align: justify;
-}
-
-body.index .search-ribbon {
-  margin-top: 12%;
-  text-align: center;
-}
-
-body.index .mdl-textfield {
-  position: relative;
-  font-size: 20px;
-  display: inline-block;
-  box-sizing: border-box;
-  width: 325px;
-  max-width: 100%;
-  margin: 0;
-  padding: 20px 0;
-}
-
-body.index .mdl-textfield__input {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  display: block;
-  font-size: 25px;
-  font-family: "Helvetica", "Arial", sans-serif;
-  margin: 0;
-  padding: 4px 0;
-  width: 100%;
-  background: none;
-  text-align: left;
-  color: inherit;
 }
 
-body.search .search-ribbon {
+.search {
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 20px;
   text-align: center;
-  width: 50%;
   margin: 0 auto;
+}
+
+#query {
+  margin-right: 20px;
+  width: 25%;
 }

@@ -28,6 +28,13 @@
       <nav class="navbar navbar-dark bg-primary">
         <a class="navbar-brand" href="#">{{title}}</a>
       </nav>
+      <div class="search">
+        <form method="GET" action="search">
+          <input class="form-control" type="text" id="query" name="q" placeholder="What job?">
+          <input class="form-control" type="text" id="query" name="l" placeholder="Where?">
+          <button type="submit" class="btn btn-primary" align="center">Find Jobs</button>
+        </form>
+      </div>
     </header>
     <main class="card">
       <div class="grid-container">

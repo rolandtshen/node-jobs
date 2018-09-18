@@ -27,6 +27,7 @@ app.get('/search', function (req, res) {
     })
     .then(function(response){
         res.render("search", { title: "Internships", jobs: response.data});
+        console.log(response.data.length)
     })
     .catch(function(error) {
         console.log(error);
