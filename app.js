@@ -1,7 +1,7 @@
 const axios = require('axios');
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const path = require('path');
 
 const handlebars = require('express-handlebars');
@@ -21,7 +21,7 @@ app.get('/', function (req, res) {
 app.get('/search', function (req, res) {
     queries = req.query;
     let url = `https://indreed.herokuapp.com/api/jobs`;
-    if (queries){
+    if (queries) {
         axios.get(url, {
         params: queries
     })

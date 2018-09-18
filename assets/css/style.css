@@ -16,23 +16,25 @@
 }
 
 body.index .search-ribbon {
-  width: 100%;
-  background-color: #ffffff;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  padding: 20px 30px;
-  box-sizing: border-box;
-  height: 75.2vh;
+  width: 200px;
+  height: 600px;
+  background-color: blue;
+
+  position:absolute; /*it can be fixed too*/
+  left:0; right:0;
+  top:0; bottom:0;
+  margin:auto;
+
+  /*this to solve "the content will not be cut when the window is smaller than the content": */
+  max-width:100%;
+  max-height:100%;
+  overflow:auto;
+  text-align: justify;
 }
 
-body.index .search-ribbon form {
+body.index .search-ribbon {
   margin-top: 12%;
   text-align: center;
-}
-
-body.index .mdl-textfield.mdl-js-textfield.is-upgraded {
-  margin-right: 20px;
 }
 
 body.index .mdl-textfield {
@@ -63,4 +65,6 @@ body.index .mdl-textfield__input {
 body.search .search-ribbon {
   padding: 20px;
   text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
