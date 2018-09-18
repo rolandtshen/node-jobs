@@ -1,0 +1,21 @@
+{
+  "name": "Internships",
+  "version": "1.0.0",
+  "description": "Tech internship job scraper for students",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["internship", "job", "search"],
+  "author": "rolandtshen",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
