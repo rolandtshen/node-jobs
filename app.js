@@ -26,7 +26,7 @@ app.get('/search', function (req, res) {
         params: queries
     })
     .then(function(response){
-        res.render("search", { title: "Internships", jobs: response.data});
+        res.render("jobs", { title: "Jobs", jobs: response.data});
         console.log(response.data.length)
     })
     .catch(function(error) {
@@ -34,7 +34,7 @@ app.get('/search', function (req, res) {
     });
     }
     else {
-        res.render("search", {title: "Internships"})
+        res.render("jobs", {title: "Jobs"})
     }
 });
 
